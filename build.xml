@@ -43,17 +43,17 @@
     </Target>
 
     <!-- The LoadNuGetPackages Target -->
-    <ItemGroup>
+    <!--<ItemGroup>
        <NuGetPackageConfigs Include="$(MSBuildStartupDirectory)\**\packages.config" />
     </ItemGroup>
     <Target Name="LoadNuGetPackages" DependsOnTargets="Clean">
         <Message Importance="high" Text="Retrieving packages for %(NuGetPackageConfigs.Identity)" />
         <Exec Command="&quot;$(SrcPath)\.nuget\nuget&quot; install &quot;%(NuGetPackageConfigs.Identity)&quot; -o &quot;$(SrcPath)\packages&quot;" />
-    </Target>
+    </Target>-->
 
 
     <!-- Compiles and Cleans all projects (if named correctly) -->
-    <Target Name="Build" DependsOnTargets="LoadNuGetPackages">
+    <Target Name="Build" DependsOnTargets="Clean">
         <PropertyGroup>
             <CurrentProject>%(Projects.Identity)</CurrentProject>
         </PropertyGroup>
