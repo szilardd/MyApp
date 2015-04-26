@@ -14,7 +14,7 @@
 
         <!-- General Paths -->
         <RootPath>$(MSBuildProjectDirectory)</RootPath>
-        <SrcPath>$(RootPath)\src</SrcPath>
+        <SrcPath>$(RootPath)</SrcPath>
         <ToolsPath>$(RootPath)\tools</ToolsPath>
         <Packages>$(SrcPath)\packages</Packages>
     </PropertyGroup>
