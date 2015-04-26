@@ -181,7 +181,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <None Include="Web.Production.config" />
+    <None Include="Web.Production.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web.Test.config" />
   </ItemGroup>
   <ItemGroup>
