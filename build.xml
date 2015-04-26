@@ -11,6 +11,12 @@
         <PublishProfile Condition="$(PublishProfile) == ''">Test</PublishProfile>
         <OutputDir>.out</OutputDir>
         <NUnitConsole>packages\NUnit.Runners.2.6.4\tools\nunit-console.exe</NUnitConsole>
+
+        <!-- General Paths -->
+        <RootPath>$(MSBuildProjectDirectory)</RootPath>
+        <SrcPath>$(RootPath)\src</SrcPath>
+        <ToolsPath>$(RootPath)\tools</ToolsPath>
+        <Packages>$(SrcPath)\packages</Packages>
     </PropertyGroup>
 
     <ItemGroup>
